@@ -1,0 +1,155 @@
+.header {
+    background-color: #fff;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__logo-link {
+    }
+    
+    &__logo-img {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    
+    &__navbar {
+        margin-right: 82px;
+    }
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+    }
+    
+    &__item {
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease;
+        &:hover .header__drop-down {
+            display: block;
+        }
+    }
+    
+    &__item-link {
+        display: flex;
+        flex-direction: row;
+        padding: 16px 0;
+        font-size: 16px;
+        border: none;
+        font-family: 'Questrial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #111111;
+    }
+    
+    
+    &__drop-down {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+    }
+    
+    &__drop-down-text {
+        font-family: 'Questrial';
+        color: black;
+        border-radius: 5px;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+    
+    &__drop-down-img {
+        margin-left: 4px;
+    }
+    
+    
+    &__lang {
+        font-size: 16px;
+        border: none;
+    }
+    
+    &__btn {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        font-family: 'Questrial';
+        padding: 16px 24px;
+        border: none;
+        outline: none;
+        background: #43BCC7;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    &__right-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__main-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.dropbtn {
+    font-family: 'Questrial';
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-right: 24px;
+    color: #111111;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-family: 'Questrial';
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content .header__language{
+    color: black;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */

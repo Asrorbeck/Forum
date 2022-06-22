@@ -4,29 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Asrorbek</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-
+            <div class="header__container">
+                <a href="./index.html" class="header__logo-link"><img src="./img/header-logo.svg" alt="logotype of this webpage" class="header__logo-img"></a>
+                
+                <div class="header__right-wrapper">
+                    <nav class="header__navbar">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">About</a>
+                            </li>
+                            
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Agenda</a>
+                            </li>
+                            
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Speakers</a>
+                            </li>
+                            
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Media <img class="header__drop-down-img" src="./img/down.svg" alt="down"></a>
+                                
+                                <div class="header__drop-down">
+                                    <a href="#" class="header__drop-down-text">Photo</a>
+                                    <a href="#" class="header__drop-down-text">Video</a>
+                                </div>
+                            </li>
+                            
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Services <img class="header__drop-down-img" src="./img/down.svg" alt="down"></a>
+                                
+                                <div class="header__drop-down">
+                                    <a href="#" class="header__drop-down-text">Taxi</a>
+                                    <a href="#" class="header__drop-down-text">Hotel</a>
+                                </div>
+                            </li>
+                            
+                            <li class="header__item">
+                                <a href="#" class="header__item-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="header__main-wrapper">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn">ENG <img class="header__drop-down-img" src="./img/down.svg" alt="down"></a>
+                            <div class="dropdown-content">
+                                <a class="header__language" href="#">UZ</a>
+                                <a class="header__language" href="#">RU</a>
+                            </div>
+                        </div>
+                        
+                        <button class="header__btn">Registration</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-
+    
     <main class="main">
         <section class="hero">
             <div class="container">
                 <div class="hero__container">
-
+                    <div class="hero__wrapper">
+                        <h2 class="hero__heading"><span class="hero__dec">1st summit</span> of the Organization of Turkic States</h2>
+                        
+                        <p class="hero__text">The first summit of the Organization of Turkic States, which is formed on the basis of the Cooperation Council of Turkic Speaking States, will be held in 2022 in Uzbekistan.</p>
+                        
+                        <div class="hero__btn-wrapper">
+                            <button class="hero__btn">Register now</button>
+                            <button class="hero__btn-2">Agenda</button>
+                        </div>
+                        
+                        <div class="hero__bottom-wrapper">
+                            <p class="hero__what">1-Turkic summit</p>
+                            <p class="hero__slash">/</p>
+                            <p class="hero__where">Tashkent</p>
+                            <p class="hero__slash">/</p>
+                            <p class="hero__when">11 november</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="hero__box">
+                        <div class="hero__countdown" id="hero__countdown">
+                            
+                            <ul class="hero__list-count">
+                                
+                                <li><span id="days"></span>days</li>
+                                
+                                <li><span id="hours"></span>Hours</li>
+                                
+                                <li><span id="minutes"></span>Minutes</li>
+                                
+                                <li><span id="seconds"></span>Seconds</li>
+                                
+                            </ul>
+                        </div>
+                        
+                        <!-- <div class="hero__bow-wrapper">
+                            <p class="hero__live">Live</p>
+                            
+                            <p class="hero__webinar">webinar</p>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            
-        </div>
-    </footer>
+    
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>
