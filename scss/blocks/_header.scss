@@ -145,6 +145,10 @@
     display: block;
 }
 
+.burger-btn {
+    display: none;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -152,3 +156,45 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+@media only screen and (max-width: 1130px) {
+    .header {
+
+        &__logo-img {
+            margin-right: 20px;
+        }
+
+        &__navbar {
+            margin-right: 0px;
+        }
+
+        &__right-wrapper {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .header {
+        &__main-wrapper {
+            display: none;
+        }
+
+        .burger-btn {
+            display: block;
+        }
+
+        &__navbar {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .header {
+        &__navbar {
+            display: none;
+        }
+    }
+}

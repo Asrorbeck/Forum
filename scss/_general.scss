@@ -33,3 +33,9 @@ button:hover {
 button:active {
     opacity: 0.5;
 }
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+}
