@@ -33,3 +33,17 @@
         //seconds
     }, 0)
 }());
+
+var elBtn = document.querySelector(".burger-btn");
+var elHeader = document.querySelector(".header__navbar")
+
+elBtn.addEventListener("click", function() {
+    elHeader.classList.toggle("header__navbar--active")
+})
+
+var elBtn = document.querySelector(".burger-btn-close");
+var elHeader = document.querySelector(".header__navbar")
+
+elBtn.addEventListener("click", function() {
+    elHeader.classList.remove("header__navbar--active")
+})

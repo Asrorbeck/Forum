@@ -149,6 +149,10 @@
     display: none;
 }
 
+.burger-btn-close {
+    display: none;
+}
+
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
 
@@ -188,13 +192,77 @@
         &__navbar {
             margin-right: 20px;
         }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
     }
+
+    
 }
 
 @media only screen and (max-width: 860px) {
     .header {
+        // position: relative;
+        
         &__navbar {
             display: none;
+        }
+
+        .header__navbar--active {
+            display: block;
+            position: absolute;
+            right: calc(0% + 80px);
+            top: 0;
+            z-index: 1;
+            // height: 100%;
+            .burger-btn-close {
+                display: block;
+            }
+            
+            .header__main-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+            }
+            
+            .dropbtn {
+                margin: 0;
+                color: #fff;
+            }
+
+            
+
+            .header__btn {
+                margin-bottom: 20px;
+            }
+            .header__list {
+                width: 100%;
+                border-radius: 10px 0px 0px 10px;
+                margin-left: 100px;
+                // margin-right: 100px;
+                display: flex;
+                background-color: #333A44;
+                flex-direction: column;
+            }
+
+            .header__item-link {
+                color: #fff;
+                .header__drop-down-img {
+                    svg {
+                        fill: #fff;
+                    }
+                }
+            }
+
+            .header__item:first-child {
+                margin-top: 30px;
+                align-self: flex-start;
+                position: relative;
+                margin-left: 20px;
+            } 
         }
     }
 }
