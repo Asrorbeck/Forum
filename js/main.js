@@ -38,7 +38,7 @@ var elBtn = document.querySelector(".burger-btn");
 var elHeader = document.querySelector(".header__navbar")
 
 elBtn.addEventListener("click", function() {
-    elHeader.classList.toggle("header__navbar--active")
+    elHeader.classList.add("header__navbar--active")
 })
 
 var elBtn = document.querySelector(".burger-btn-close");

@@ -35,6 +35,7 @@
     &__item-link {
         display: flex;
         flex-direction: row;
+        align-items: center;
         padding: 16px 0;
         font-size: 16px;
         border: none;
@@ -212,6 +213,7 @@
         }
 
         .header__navbar--active {
+            
             display: block;
             position: absolute;
             right: calc(0% + 80px);
@@ -225,7 +227,7 @@
             .header__main-wrapper {
                 display: flex;
                 flex-direction: column;
-                gap: 24px;
+                gap: 16px;
             }
             
             .dropbtn {
@@ -243,6 +245,9 @@
                 border-radius: 10px 0px 0px 10px;
                 margin-left: 100px;
                 display: flex;
+                gap: 16px;
+                transform: scale(0.1);
+                transform-origin: right;
                 background-color: #333A44;
                 flex-direction: column;
             }
